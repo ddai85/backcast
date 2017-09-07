@@ -8,14 +8,15 @@ var VideoListView = Backbone.View.extend({
 
   render: function() {
     this.$el.empty();
+    this.$el.children().detach();
     this.$el.html(this.template());
     for (var i = 0; i < 5; i++) {
-      var model = this.collection.models[i];
-      var view = new VideoListEntryView({el: '.video-list', model: model});
+      var model = this.collection.at(i);
       var id = model.get('id');
       model.set('source', 'https://www.youtube.com/embed/' + id);
-      view.render();
-      console.log('im rendering');
+      var view = new VideoListEntryView({model: model});
+      this.$('.video-list').append(view.render().el);
+
     }
 
 

@@ -4,14 +4,13 @@ var VideoListEntryView = Backbone.View.extend({
     'click .video-list-entry-title': 'select'
   },
 
+ 
   render: function() {
-    var html = this.template(this.model.attributes);
-    this.$el.append(html);
+    this.$el.html(this.template(this.model.attributes));
     return this;
   },
 
   select: function() {
-    console.log('run');
     this.model.select();
   },
 
