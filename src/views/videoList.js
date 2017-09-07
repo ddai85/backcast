@@ -1,18 +1,25 @@
 var VideoListView = Backbone.View.extend({
-  
-  render: function() {
-    this.$el.children().detach();
-    this.$el.html(this.template());
-    this.collection.forEach(this.renderVideo, this);
-    return this;
+  initialize: function() {
+    this.collection.on('sync', function() {
+      this.$el.empty();
+      this.render(); 
+    }, this);
   },
 
-  renderVideo: function(video) {
-    var videoView = new VideoListEntryView({el: '.video-list', model: video});
-    var id = video.get('id');
-    video.set('source', 'https://www.youtube.com/embed/' + id);
-    videoView.render();
+  render: function() {
+    this.$el.empty();
+    this.$el.html(this.template());
+    for (var i = 0; i < 5; i++) {
+      var model = this.collection.models[i];
+      var view = new VideoListEntryView({el: '.video-list', model: model});
+      var id = model.get('id');
+      model.set('source', 'https://www.youtube.com/embed/' + id);
+      view.render();
+      console.log('im rendering');
+    }
 
+
+    return this;
   },
 
   template: templateURL('src/templates/videoList.html')
