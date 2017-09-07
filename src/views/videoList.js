@@ -9,6 +9,8 @@ var VideoListView = Backbone.View.extend({
 
   renderVideo: function(video) {
     var videoView = new VideoListEntryView({el: '.video-list', model: video});
+    var id = video.get('id');
+    video.set('source', 'https://www.youtube.com/embed/' + id);
     videoView.render();
 
   },
