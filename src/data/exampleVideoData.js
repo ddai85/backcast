@@ -4,7 +4,7 @@
 window.exampleVideoData = [
   {
     'kind': 'youtube#searchResult',
-    'etag': 'm2yskBQFythfE4irbTIeOgYYfBU/fb8yVdyj75cLQhkuYlAvqUCq69A',
+    'etag': '4WJLlWpzpP0',
     'id': {
       'kind': 'youtube#video',
       'videoId': '4WJLlWpzpP0'
@@ -37,7 +37,7 @@ window.exampleVideoData = [
   },
   {
     'kind': 'youtube#searchResult',
-    'etag': 'm2yskBQFythfE4irbTIeOgYYfBU/cESn2GERxrCr8vXikZnggl9NEdc',
+    'etag': 'PcTVQyrWSSs',
     'id': {
       'kind': 'youtube#video',
       'videoId': 'PcTVQyrWSSs'
@@ -70,7 +70,7 @@ window.exampleVideoData = [
   },
   {
     'kind': 'youtube#searchResult',
-    'etag': 'm2yskBQFythfE4irbTIeOgYYfBU/JwDlo1xuNgCMHRRZTFpk64oZmYs',
+    'etag': 'RnXQa7Zuvgg',
     'id': {
       'kind': 'youtube#video',
       'videoId': 'RnXQa7Zuvgg'
@@ -103,7 +103,7 @@ window.exampleVideoData = [
   },
   {
     'kind': 'youtube#searchResult',
-    'etag': 'm2yskBQFythfE4irbTIeOgYYfBU/9S_HB0wzahiY2L55no516DYcWSs',
+    'etag': 'XdkRPCzwyV8',
     'id': {
       'kind': 'youtube#video',
       'videoId': 'XdkRPCzwyV8'
@@ -136,7 +136,7 @@ window.exampleVideoData = [
   },
   {
     'kind': 'youtube#searchResult',
-    'etag': 'm2yskBQFythfE4irbTIeOgYYfBU/F3H6YZUPtMxyG8cOHBazrY96ZRs',
+    'etag': '4udR30JYenA',
     'id': {
       'kind': 'youtube#video',
       'videoId': '4udR30JYenA'
